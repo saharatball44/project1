@@ -1,0 +1,76 @@
+/* ตกแต่งส่วนพื้นฐาน */
+body {
+    font-family: Arial, sans-serif; /* กำหนดฟอนต์ */
+    background-color: #f4f4f9; /* สีพื้นหลัง */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+/* ตกแต่งส่วนหัว */
+header {
+    background-color: #4CAF50; /* สีพื้นหลังหัวข้อ */
+    color: white; /* สีตัวอักษร */
+    padding: 20px 0; /* ระยะห่างด้านใน */
+    font-size: 24px; /* ขนาดตัวอักษร */
+    text-transform: uppercase; /* เปลี่ยนตัวอักษรเป็นพิมพ์ใหญ่ */
+}
+
+/* ฟอร์ม */
+form {
+    margin: 20px auto; /* จัดให้อยู่ตรงกลางและมีระยะด้านบนล่าง */
+    max-width: 400px; /* ความกว้างสูงสุด */
+    background: white; /* สีพื้นหลังฟอร์ม */
+    border-radius: 8px; /* มุมมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
+    padding: 20px; /* ระยะห่างด้านใน */
+}
+
+/* ป้ายกำกับ */
+label {
+    display: block; /* จัดให้อยู่บรรทัดใหม่ */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+    font-weight: bold; /* ตัวหนา */
+}
+
+/* ช่องกรอกข้อมูล */
+input[type="number"] {
+    width: 100%; /* ความกว้างเต็ม */
+    padding: 10px; /* ระยะห่างด้านใน */
+    margin-bottom: 15px; /* ระยะห่างระหว่างช่อง */
+    border: 1px solid #ddd; /* เส้นขอบบาง */
+    border-radius: 4px; /* มุมมน */
+    font-size: 16px; /* ขนาดตัวอักษร */
+}
+
+/* ปุ่ม */
+button {
+    width: 100%; /* ความกว้างเต็ม */
+    padding: 10px; /* ระยะห่างด้านใน */
+    background-color: #4CAF50; /* สีพื้นหลังปุ่ม */
+    color: white; /* สีตัวอักษร */
+    border: none; /* ไม่มีขอบ */
+    border-radius: 4px; /* มุมมน */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    cursor: pointer; /* เปลี่ยนเป็นรูปมือเมื่อชี้ */
+}
+
+button:hover {
+    background-color: #45a049; /* สีเมื่อชี้เมาส์ */
+}
+
+/* ผลลัพธ์ */
+#result {
+    margin-top: 20px; /* ระยะห่างด้านบน */
+    font-size: 18px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* ตัวหนา */
+    color: #333; /* สีตัวอักษร */
+}
+
+/* ส่วนท้าย */
+footer {
+    margin-top: 20px; /* ระยะห่างด้านบน */
+    font-size: 14px; /* ขนาดตัวอักษร */
+    color: #777; /* สีตัวอักษร */
+}
+

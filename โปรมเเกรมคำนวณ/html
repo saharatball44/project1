@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="เว็บไซต์คำนวณออนไลน์12345">
+    <meta name="author" content="ชื่อของคุณ">
+    <title>คำนวณดินถม</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>เครื่องคำนวณออนไลน์</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                <li><a href="services.html">บริการ</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="calculator">
+            <p>ตัวเลือก:</p>
+            <label><input type="radio" name="choice" value="option1" onclick="toggleInput('input1')"> ตัวเลือก 1</label>
+            <label><input type="radio" name="choice" value="option2" onclick="toggleInput('input2')"> ตัวเลือก 2</label>
+            <div id="input1" class="hidden">
+                <label for="extra1">กรอกข้อมูลสำหรับตัวเลือก 1:</label>
+                <input type="text" id="extra1" name="extra1">
+            </div>
+            <div id="input2" class="hidden">
+                <p>เลือกเพศของคุณ:</p>
+                <input type="radio" id="male" name="gender" value="male"><label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female"><label for="female">หญิง</label>
+
+                <p>ใส่ค่า:</p>
+                <label for="numInput1">กรอกตัวเลขที่ 1:</label>
+                <input type="number" id="numInput1" placeholder="ตัวเลขแรก">
+                <label for="numInput2">กรอกตัวเลขที่ 2:</label>
+                <input type="number" id="numInput2" placeholder="ตัวเลขที่สอง">
+
+                <button type="button" id="calculateBtn" onclick="calculate()">คำนวณ</button>
+                <p id="errorMessage_cal1" style="color: red; display: none;"></p>
+            </div>
+
+
+        </form>
+        <p id="result">ผลลัพธ์: </p>
+        <button id="nextPageBtn" onclick="goToNextPage()">หน้าต่อไป</button>
+        <p id="errorMessage" style="color: red; display: none;"></p>
+    </main>
+    <footer>
+        <p>สร้างโดย © 2024</p>
+    </footer>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</body>
+</html>
